@@ -181,6 +181,7 @@ return [
 	    Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
 	    Rap2hpoutre\LaravelLogViewer\LaravelLogViewerServiceProvider::class,
 	    Collective\Html\HtmlServiceProvider::class,
+	    Spatie\Permission\PermissionServiceProvider::class,
 
     ],
 
