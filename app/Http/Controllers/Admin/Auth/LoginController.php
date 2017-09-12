@@ -5,7 +5,6 @@ namespace App\Http\Controllers\Admin\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Auth;
-use Hesto\MultiAuth\Traits\LogsoutGuard;
 
 class LoginController extends Controller
 {
@@ -20,9 +19,7 @@ class LoginController extends Controller
     |
     */
 
-    use AuthenticatesUsers, LogsoutGuard {
-        LogsoutGuard::logout insteadof AuthenticatesUsers;
-    }
+    use AuthenticatesUsers;
 
     /**
      * Where to redirect users after login / registration.
